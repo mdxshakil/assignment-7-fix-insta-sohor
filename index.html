@@ -77,66 +77,64 @@
                 <h1>Reported posts</h1>
             </div>
         </main>
-        <!-- QnA Section -->
-        <section class="container my-5">
-            <h1 class="display-4 text-center">QnA</h1>
-            <hr>
-            <h5 class="text-success">Question 1: How Javascript Works?</h5>
-            <h6>Answer: We know that, Javascript is a single threaded, high level,interpreted, just-in-time compiled programming language. It means it can only execute one command at a time and also in a specific order. That means it can go to next line if current line has been executed successfully. Everything of javascript happens in a execution context. Every browser like google chrome, firefox etc has javascript engine that takes the javascript syntax which is currently in human readable format and converts it into machine code(0,1) format.</h6>
-
-            <h5 class="text-success">How does Javascript event loop works?</h5>
-            <h6>Since javascript is single threaded, it is able to execute one command at a time. Suppose there is two button in a page. Now what if the user press these two button quickly one after another? Well, when one button is clicked, javascript starts doing that button's operation and as the second button is clicked also, javascript wont stop execution first button operation. Rather it should keep doing operatio of that first button and in the mean time all the other operation are listed/noted on a queue. Javascript takes a note what to do after what and so on. It checks the queue and keep working until the queue is empty. Any event won't be executed before completing the previous event.</h6>
-
-            <h5 class="text-success">Diference Between Local Storage and Session Storage</h5>
-            <h6>Local Storage:</h6> 
-            <ul>
-                <li>Storage capacity is 10 MB.</li>
-                <li>Never Expires until manually deleted.</li>
-                <li>Accessible from any window of current browser.</li>
-                <li>Only accessible from browser</li>
-            </ul>
-            <h6>Session Storage</h6>
-            <ul>
-                <li>Storage capacity is 5 MB.</li>
-                <li>Expires on tab closing.</li>
-                <li>Accessible from current tab only.</li>
-                <li>Only accessible from browser</li>
-            </ul>
+        <!-- QnA- Bonus Section -->
+        <section class="container my-5" id="qna-section">
+            <h1 class="text-center mb-5">Bonus Section - QnA</h1>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Question 1: How Javascript Works?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <p class="">We know that, Javascript is a single threaded, high level,interpreted, just-in-time compiled programming language. It means it can only execute one command at a time and also in a specific order. That means it can go to next line if current line has been executed successfully. Everything of javascript happens in a execution context. Every browser like google chrome, firefox etc has javascript engine that takes the javascript syntax which is currently in human readable format and converts it into machine code(0,1) format.</p></div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        How does Javascript event loop works?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"><p class="">Since javascript is single threaded, it is able to execute one command at a time. Suppose there are two button in a page. Now what if the user press these two button quickly one after another? Well, when one button is clicked, javascript starts doing that button's operation and as the second button is clicked also, javascript won't stop execution first button operation. Rather it should keep doing operation of that first button and in the mean time all the other operation are listed/noted on a queue. Javascript takes a note what to do after what and so on. It checks the queue and keep working until the queue is empty. Any event won't be executed before completing the previous event.</p></div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      What are the difference Between Local Storage and Session Storage?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body d-flex align-items-center justify-content-around">
+                        <div>
+                            <h6>Local Storage:</h6> 
+                            <ul>
+                                <li>Storage capacity is 10 MB.</li>
+                                <li>Never Expires until manually deleted.</li>
+                                <li>Accessible from any window of current browser.</li>
+                                <li>Only accessible from browser</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h6>Session Storage</h6>
+                            <ul>
+                                <li>Storage capacity is 5 MB.</li>
+                                <li>Expires on tab closing.</li>
+                                <li>Accessible from current tab only.</li>
+                                <li>Only accessible from browser</li>
+                            </ul>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
           </section>
 
-          <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    Question 1: How Javascript Works?
-                </button>
-              </h2>
-              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                    <h6 class="text-success">We know that, Javascript is a single threaded, high level,interpreted, just-in-time compiled programming language. It means it can only execute one command at a time and also in a specific order. That means it can go to next line if current line has been executed successfully. Everything of javascript happens in a execution context. Every browser like google chrome, firefox etc has javascript engine that takes the javascript syntax which is currently in human readable format and converts it into machine code(0,1) format.</h6></div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                  Accordion Item #2
-                </button>
-              </h2>
-              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                  Accordion Item #3
-                </button>
-              </h2>
-              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-              </div>
-            </div>
-          </div>
+          
         <footer></footer>
 
         <!-- add javascript  file  -->
